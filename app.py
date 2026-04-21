@@ -9,7 +9,7 @@ app = Flask(__name__)
 def get_secret():
     """Fetch database credentials from AWS Secrets Manager"""
     secret_name = "training/db/credentials"
-    region_name = "us-east-1"
+    region_name = "eu-north-1"
 
     # Create a Secrets Manager client
     session = boto3.session.Session()
