@@ -38,7 +38,8 @@ def get_db_connection():
         database=secret['dbname'],
         user=secret['username'],
         password=secret['password'],
-        port=secret.get('port', 5432)
+        port=secret.get('port', 5432),
+        sslmode='require'
     )
     return conn
 
